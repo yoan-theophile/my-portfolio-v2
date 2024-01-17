@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Théophile Tagne">
+    <!-- TODO: UPDATE SEO -->
     <meta property="og:url" content="https://yoan-theophile.github.io/my-portfolio-v1/" >
     <meta property="og:type" content="website" >
     <meta property="og:site_name" content="yoan-theophile.github.io" >
@@ -15,12 +16,12 @@
         content="Théophile Tagne est un passionné de développement web et étudiant en master dans la filière génie logiciel à l'Université des Montagnes">
     <meta name="copyright" content="© yoantheophile.com">
     <meta name="robots" content="none">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     <title>Théophile Tagne</title>
 </head>
@@ -84,8 +85,8 @@
     </aside>
     <div class="container">
     </div>
-    <script type="module" src="js/load_content.js"></script>
-    <script src="js/nav_link_coloriser.js"></script>
+    <script type="module" src="{{ url_for('static', filename='js/load_content.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/nav_link_coloriser.js') }}"></script>
     <script src="https://kit.fontawesome.com/684f504cce.js" crossorigin="anonymous"></script>
 </body>
 
