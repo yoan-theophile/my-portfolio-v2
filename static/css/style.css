@@ -314,7 +314,7 @@ img {
 
 /* ------------------------------ contact page ------------------------------ */
 #contact {
-  background-image: url("../images/marble-background.png");
+  background-image: url("../images/marble-background-2.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -333,7 +333,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   #contact {
-    background-image: url("../images/marble-background.jpg");
+    background-image: url("../images/marble-background-2.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

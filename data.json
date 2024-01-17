@@ -1,21 +1,21 @@
 {
   "section": {
     "home": {
-      "text": "<p>Théophile Tagne est un passionné de développement web et étudiant en master dans la filière génie logiciel à l'      <span class='text-success'>          <strong>              Université des Montagnes          </strong>      </span>  </p>",
+      "text": "<p>Théophile Tagne est un passionné de développement web et étudiant en informatique à <span class='text-success'> <strong>Polytech Nantes</strong></span></p>",
       "image": {
-        "src": "images/theophileL.png",
+        "src": "images/theophileL2.jpg",
         "alt": "Tagne Theophile"
       }
     },
     "about": {
-      "text": "<h1>A propos  </h1>  <p>      Je suis un développeur junior passionné par le développement d'applications web.  </p>  <p>      Pour mes projets, j'utilise <strong> Figma, ReactJS, Angular et PHP.</strong>  </p>  <p>      Au-delà du codage, le <span class='text-success'> travail d'équipe, la bonne organisation et la proactivité </span> font partie de      mon quotidien.  </p>",
+      "text": "<h1>A propos  </h1><p>Je suis étudiant et développeur web passionné par le développement d'applications et l'IA.  </p><p>Pour mes projets, j'utilise <strong>Angular, PHP, Python & Figma.</strong>  </p>  <p>Au-delà du codage, le <span class='text-success'> travail d'équipe, la bonne organisation et la proactivité </span> font partie de      mon quotidien.</p>",
       "image": {
         "src": "images/browser_illustrations.webp",
         "alt": "coding"
       }
     },
     "achievement": {
-      "text": "<h1>Réalisation                    </h1>                    <p>                        Au cours d'un stage académique au sein de l'entreprise                        <a href='https://da-se.com'>DA-SERVICES</a>                        , j'ai contribué au développement de l'application                        <a href='https://allocampusdev.web.app'>                            <span class='text-cursive'>                                <strong>                                    AlloCampus                                </strong>                            </span>.                        </a>                    </p>",
+      "text": "<h1>Réalisations</h1><p>Au cours de mon stage académique en licence au sein de l'entreprise                        <a href='https://da-se.com'>DA-SERVICES</a>                        , j'ai contribué au développement frontend et backend de l'application<a href='https://allocampusdev.web.app'>                            <span class='text-cursive'>                                <strong>AlloCampus</strong>                            </span></a> pour la communication des notes des élèves.</p>",
       "image": {
         "src": "images/logo allo campus.png",
         "alt": "allocampus"
