@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Théophile Tagne">
     <!-- TODO: UPDATE SEO -->
-    <meta property="og:url" content="https://yoan-theophile.github.io/my-portfolio-v1/" >
-    <meta property="og:type" content="website" >
-    <meta property="og:site_name" content="yoan-theophile.github.io" >
-    <meta property="og:title" content="Théophile Tagne | Portfolio" >
-    <meta name="msapplication-TileImage" content="image/icon.png" >
+    <meta property="og:url" content="https://yoan-theophile.github.io/my-portfolio-v1/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="yoan-theophile.github.io">
+    <meta property="og:title" content="Théophile Tagne | Portfolio">
+    <meta name="msapplication-TileImage" content="image/icon.png">
     <meta name="description"
         content="Théophile Tagne est un passionné de développement web et étudiant en master dans la filière génie logiciel à l'Université des Montagnes">
     <meta name="copyright" content="© yoantheophile.com">
@@ -52,8 +52,24 @@
         </nav>
     </div>
 
-    <main></main>
+    <!-- sections -->
+    <main>
+        {% for key, section in data.section.items() %}
+        <section id="{{ key }}">
+            <div class="container">
+                <div class="section">
+                    <div class="section__text animation-fadeInLeft">
+                        {{ section.text | safe }}
+                    </div>
+                    <img class="section__img animation-fadeInRight" src="{{ url_for('static', filename=section.image.src) }}"
+                        alt="{{ section.image.alt }}">
+                </div>
+            </div>
+        </section>
+        {% endfor %}
+    </main>
 
+    <!-- contact -->
     <aside id="contact">
         <div class="container">
             <div class="section">
@@ -63,29 +79,36 @@
                     </h1>
                     <p id="town">
                         <i class="fa-solid fa-location-dot"></i>
-                        <strong>Pays:</strong>
+                        <strong>Ville:</strong> {{ data.contact.city ~ ', ' ~ data.contact.town }}
                     </p>
                     <p id="phone_number">
                         <i class="fa-solid fa-phone"></i>
-                        <strong>Téléphone:</strong>
+                        <strong>Téléphone:</strong> {{ data.contact.phone_number }}
                     </p>
                     <p id="email">
                         <i class="fa-solid fa-envelope"></i>
-                        <strong>Email:</strong>
+                        <strong>Email:</strong> <a href="mailto:{{ data.contact.email }}">{{ data.contact.email }}</a>
                     </p>
                 </div>
             </div>
+
             <!-- Social media -->
             <footer class="footer-social">
-                <h4 class="footer-social__title">Suivez-nous sur</h4>
+                <h4 class="footer-social__title">Suivez-moi sur</h4>
                 <ul class="footer-social__list">
+                    {% for key, url in data['footer-social'].items() %}
+                    <li class="footer-social__list__item">
+                        <a href="{{ url }}" class="footer-social__list__link">
+                            <i class="fa fa-{{ key }}"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
                 </ul>
             </footer>
         </div>
     </aside>
     <div class="container">
     </div>
-    <script type="module" src="{{ url_for('static', filename='js/load_content.js') }}"></script>
     <script src="{{ url_for('static', filename='js/nav_link_coloriser.js') }}"></script>
     <script src="https://kit.fontawesome.com/684f504cce.js" crossorigin="anonymous"></script>
 </body>

@@ -6,7 +6,20 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    data = {}
+    try:
+        # TODO: Utilise un chemin absolu en prod
+        # exemple: data_file_path = '/path/to/your/data.json'
+        with open("data.json", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print("Erreur de traitement de data.json")
+        # return jsonify({"error": "Data file not found"}), 404
+    except json.JSONDecodeError:
+        print("Erreur de traitement de data.json")
+        # return jsonify({"error": "Error decoding JSON data"}), 500
+    
+    return render_template("index.html", data=data)
 
 
 @app.get("/data.json")

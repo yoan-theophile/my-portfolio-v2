@@ -23,17 +23,13 @@
     }
   },
   "contact": {
-    "town": "Cameroun",
-    "city": "Bangangte",
-    "phone_number": "675741063",
+    "town": "France",
+    "city": "Nantes",
+    "phone_number": "+33 6 32 82 75 93",
     "email": "tagnepierre9@gmail.com"
   },
   "footer-social": {
-    "facebook": "#facebook",
-    "twitter": "#twitter",
-    "rss": "#rss",
-    "youtube": "#youtube",
-    "linkedin": "#linkedin",
+    "linkedin": "https://www.linkedin.com/in/th%C3%A9ophile-tagne",
     "github": "https://github.com/yoan-theophile"
   }
 }
