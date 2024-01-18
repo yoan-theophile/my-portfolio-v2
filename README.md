@@ -9,21 +9,20 @@
 
 ## Overview
 
-<!-- TODO: Add a screenshot of the live project. -->
+![Live Project](static/images/live-project.png)
 
 <!-- TODO: UPDATE LINK FOR LIVE DEMO -->
-Visit this link for a live demo <https://yoan-theophile.github.io/my-portfolio-v2/>
+Visit this link for a live demo <https://yoantheophile.eu.pythonanywhere.com/>
 
-I'm a developer loving coding web applications. I'm currently studying for a master's degree software engineering at Université des Montagnes in Bangangté(Cameroun).
+I'm a developer loving coding web applications. I am currently studying computer science at Polytech Nantes.
 
-After designing a mockup with Figma, ReactJS, Angular helps me coding the frontend then PHP takes over for the backend. In addition to this; Trello and JIRA are my best friends to manager projects.
+After designing a mockup with Figma, Angular helps me coding the frontend then PHP or python take over for the backend. In addition to this; Trello and JIRA are my best friends to manager projects.
 
 Beyond coding, teamwork, good organization and proactivity are part of my daily life.
 
 ### Built With
 
-<!-- TODO: UPDATE THE TECHNO USED FOR DEPLOYMENT -->
-This site is built using the following techno and deployed with python.
+This site is built using the following techno and deployed with [pythonanywhere](https://eu.pythonanywhere.com/).
 
 - Flask
 - HTML
@@ -42,5 +41,4 @@ Some features are presented in this site such as :
 ## Contact
 
 - Live in: Nantes, France
-- Phone number: +33 6 32 82 75 93
 - Email: tagnepierre9@gmail.com
