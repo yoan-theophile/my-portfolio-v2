@@ -41,23 +41,23 @@ h2 {
 }
 
 p {
-  margin: ($margin / 2) auto ($margin / 2) auto;
+  margin: calc($margin / 2) auto calc($margin / 2) auto;
 }
 
 a {
   // display: block;
   width: 100%;
   text-decoration: none;
-  color: $orange;
+  color: $primary;
   text-align: center;
   font-weight: $font-weight-semibold;
   @include transition("color");
   &:visited {
-    color: darken($orange, 15%);
+    color: darken($primary, 15%);
   }
   &:hover,
   &:active {
-    color: lighten($orange, 15%);
+    color: lighten($primary, 15%);
     @include transition("color");
   }
 }

@@ -49,7 +49,7 @@ p {
 a {
   width: 100%;
   text-decoration: none;
-  color: #fd4a0d;
+  color: #395839;
   text-align: center;
   font-weight: 500;
   transition-property: "color";
@@ -57,10 +57,10 @@ a {
   transition-timing-function: ease-in-out;
 }
 a:visited {
-  color: #bc3102;
+  color: #1b2a1b;
 }
 a:hover, a:active {
-  color: #fe8359;
+  color: #578657;
   transition-property: "color";
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
@@ -89,7 +89,7 @@ img {
 }
 
 .text-success {
-  color: #00cc66;
+  color: #395839;
 }
 
 .text-cursive {
@@ -223,7 +223,7 @@ img {
 #about .section,
 #achievement .section,
 #contact .section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -277,6 +277,12 @@ img {
     overflow: scroll hidden;
     text-overflow: ellipsis;
   }
+  #home .section .section__text h1,
+  #about .section .section__text h1,
+  #achievement .section .section__text h1,
+  #contact .section .section__text h1 {
+    overflow: scroll hidden;
+  }
   #home .section .section__img,
   #about .section .section__img,
   #achievement .section .section__img,
@@ -289,6 +295,11 @@ img {
 /* -------------------------------- home page ------------------------------- */
 #home {
   background-image: url("../images/gradienta-QWutu2BRpOs-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../images/gradienta.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -352,6 +363,11 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url("../images/student.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: 1;
 }
 #achievement .section p {
@@ -386,6 +402,8 @@ img {
   right: 0%;
   top: 0;
   z-index: 2;
+  background-color: rgba(247, 247, 247, 0.1); /* Set the background color with transparency */
+  backdrop-filter: blur(8px); /* Apply the blur effect to the background */
 }
 
 .nav {
@@ -431,7 +449,8 @@ img {
   margin-left: -3px;
   margin-right: -3px;
   position: absolute;
-  background: rgba(253, 74, 13, 0.5);
+  border: 3px solid;
+  border-color: rgba(57, 88, 57, 0.5);
   transform: rotate(2deg);
   top: -1px;
   left: -1px;
@@ -439,7 +458,7 @@ img {
   padding: 7px 0px 2px 7px;
 }
 .nav > .nav-links > a:hover {
-  color: rgba(253, 74, 13, 0.9);
+  color: rgba(57, 88, 57, 0.9);
 }
 .nav > #nav-check {
   display: none;
