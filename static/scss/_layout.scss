@@ -118,6 +118,7 @@
 
 #achievement {
   @include full-background-image("../images/student-849825_1920.jpg");
+  @include full-background-image("../images/student.png");
   z-index: 1;
   .section {
     p {

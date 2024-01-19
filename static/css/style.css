@@ -363,6 +363,11 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url("../images/student.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: 1;
 }
 #achievement .section p {
