@@ -11,7 +11,6 @@
 
 ![Live Project](static/images/live-project.png)
 
-<!-- TODO: UPDATE LINK FOR LIVE DEMO -->
 Visit this link for a live demo <https://yoantheophile.eu.pythonanywhere.com/>
 
 I'm a developer loving coding web applications. I am currently studying computer science at Polytech Nantes.
